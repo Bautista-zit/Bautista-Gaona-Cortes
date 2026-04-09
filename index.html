@@ -7,18 +7,21 @@
 </head>
 <body>
 
-<div class="formulario">
-    <h2>Consulta</h2>
-    <form action="#" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <div class="form-container">
+        <h2>Formulario de Consulta</h2>
 
-        <label for="duda">Describe tu duda</label>
-        <textarea id="duda" name="duda" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+        <form action="https://baunyx.app.n8n.cloud/webhook-test/mewgenicswiki-español" method="POST">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-        <button type="submit">Enviar</button>
-    </form>
-</div>
+            <label for="consulta">Consulta</label>
+            <textarea id="consulta" name="consulta" placeholder="Escribe tu consulta..." required></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
 
 </body>
 </html>
